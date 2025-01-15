@@ -1,0 +1,13 @@
+{
+    "extends": "./tsconfig",
+    "include": [
+        "src/index.ts",
+        "src/components/**/*",
+    ],
+    "exclude": [
+        "src/demo",
+        "src/main.tsx",
+        "src/App.tsx",
+        "node_modules"
+    ]
+}

@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "composite": false,
+    "rootDir": "./src",
+    "declaration": true,
+    "outDir": "./dist",
+    "declarationDir": "./dist",
+    "allowImportingTsExtensions": true,
+    "jsx": "react-jsx",
+    "moduleResolution": "NodeNext",
+    "module": "NodeNext",
+    "target": "ESNext",
+    "emitDeclarationOnly": true,
+    "types": [
+      "vite/client",
+      "node"
+    ]
+  },
+  "include": [
+    "src/index.ts",
+    "src/components/**/*",
+  ],
+  "typeRoots": [
+    "node_modules/@types",
+    "./src/types"
+  ],
+}
