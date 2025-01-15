@@ -1,7 +1,7 @@
 {
   "name": "listflow-react",
   "private": false,
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "This is a component for infinite scrolling loading list data",
   "module": "./dist/index.es.js",
   "types": "./dist/index.d.ts",
