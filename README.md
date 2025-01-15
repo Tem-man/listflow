@@ -1,6 +1,6 @@
 ## Screenshots
 
-![image-20250115132328784]([https://github.com/Tem-man/listflow/blob/main/Screenshots.png](https://github.com/Tem-man/listflow/blob/main/listflow-demo2.gif))
+![image-20250115132328784]([https://github.com/Tem-man/listflow/blob/main/Screenshots.png])
 
 ## Installation
 
