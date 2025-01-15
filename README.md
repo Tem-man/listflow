@@ -1,6 +1,6 @@
 ## Screenshots
 
-![image-20250115132328784](C:\Users\sell1\AppData\Roaming\Typora\typora-user-images\image-20250115132328784.png)
+![image-20250115132328784](https://github.com/Tem-man/listflow/blob/main/Screenshots.png)
 
 ## Installation
 
