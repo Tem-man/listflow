@@ -1,3 +1,19 @@
+## introduce
+
+ListFlow is a flexible and customizable React component designed to simplify the implementation of infinite scrolling lists with pagination. It allows you to load data seamlessly as users scroll through the page, providing a smooth and efficient user experience. ListFlow comes with built-in support for loading states, error handling, and pagination, making it easy to integrate into your existing projects.
+
+**Key Features:**
+
+1. Infinite Scrolling: Automatically loads more data as the user scrolls.
+
+2. Pagination Support: Easily manage paginated data sources.
+
+3. Loading States: Display loading indicators while fetching data.
+
+4. Error Handling: Show error messages when data fetching fails.
+
+5. Customizable: Highly configurable to match your project's design and requirements.
+
 ## Screenshots
 
 ![pic](https://github.com/Tem-man/listflow/blob/main/listflow-demo2.gif)
