@@ -1,6 +1,6 @@
 ## Screenshots
 
-![pic](./Screenshots.png)
+![pic](https://github.com/Tem-man/listflow/blob/main/listflow-demo2.gif)
 
 ## Installation
 
