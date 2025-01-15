@@ -1,6 +1,6 @@
 ## Screenshots
 
-![image-20250115132328784](https://github.com/Tem-man/listflow/blob/main/Screenshots.png)
+![pic](./Screenshots.png)
 
 ## Installation
 
