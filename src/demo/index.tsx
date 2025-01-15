@@ -71,7 +71,7 @@ const Demo = () => {
 
   return (
     <div className="w-[50%]">
-      <div>Works page</div>
+      <div className="text-2xl font-bold pb-4">User page</div>
 
       <ListFlow<User>
         className={sty.demoContainer}
