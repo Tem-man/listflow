@@ -2,13 +2,14 @@ import { ReactNode, useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
 import { LoadingComponent, EmptyComponent, LoadingMoreComponent, InitialErrorComponent, ErrorComponent, NoMoreComponent } from "../DefaultNode/index.tsx";
 import sty from "./index.module.css";
-interface PageParams {
+
+export interface PageParams {
   pageSize: number;
   page: number;
   [key: string]: any;
 }
 
-interface ListProps<T> {
+export interface ListFlowProps<T> {
   request: (pageParams: PageParams) => Promise<any>;
   renderItem: (item: T) => ReactNode;
   params?: Record<string, any>;
@@ -32,7 +33,7 @@ export default function ListFlow<T>({
   errorComponent = ErrorComponent,
   noMoreComponent = NoMoreComponent,
   initialErrorComponent = InitialErrorComponent,
-}: ListProps<T>) {
+}: ListFlowProps<T>) {
   const [items, setItems] = useState<T[]>([]);
   const [isFirstLoading, setIsFirstLoading] = useState(true);
   const [isLoadingMore, setIsLoadingMore] = useState(false);
