@@ -71,13 +71,13 @@ const Demo = () => {
 
      type: (pageParams: PageParams) => Promise<any>;
      default:require
-     description: Request function that must return a promise
+     description: This function is used to request network data
 
 #### renderItem
 
     type: (item: T) => ReactNode;
     default:require
-    description: Render function that must return a ReactNode
+    description: Render function that must return a ReactNode, item is the current item data returned by the network request
 
 #### params
 
@@ -95,7 +95,7 @@ const Demo = () => {
 
     type: ReactNode;
     default:<div>Loading...</div>
-    description: Loading component
+    description: This component is rendered while data is loading initially.
 
 #### emptyComponent
 
@@ -107,7 +107,7 @@ const Demo = () => {
 
     type: ReactNode;
     default:<div>Loading More...</div>
-    description: Loading more component
+    description: This component is rendered while more data is loading
 
 #### errorComponent
 
