@@ -54,10 +54,6 @@
         "name": "Lin Ji Man",
         "email": "Temman_lin@qq.com"
     },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/Tem-man/listflow.git"
-    },
     "keywords": [
         "react",
         "infinite",
