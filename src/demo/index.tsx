@@ -1,5 +1,5 @@
-// import { LjmList } from "../index";
-import { ListFlow } from "../../dist/index.es.js";
+// import { ListFlow } from "../../dist/index.es.js";
+import ListFlow from "../components/ListFlow";
 import React from "react";
 import sty from "./index.module.css";
 
