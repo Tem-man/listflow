@@ -1,8 +1,7 @@
 {
     "name": "listflow-react",
     "private": false,
-    "version": "1.0.7",
-    "description": "This is a component for infinite scrolling loading list data",
+    "version": "1.0.8",
     "module": "./dist/index.es.js",
     "types": "./dist/index.d.ts",
     "exports": {
@@ -54,13 +53,5 @@
         "name": "Lin Ji Man",
         "email": "Temman_lin@qq.com"
     },
-    "keywords": [
-        "react",
-        "infinite",
-        "scroll",
-        "loading",
-        "list",
-        "flow"
-    ],
     "license": "MIT"
 }
