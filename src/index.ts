@@ -5,3 +5,5 @@
 
 export { default as ListFlow } from "./components/ListFlow/index.tsx";
 export type { ListFlowProps, PageParams } from "./components/ListFlow/index.tsx";
+
+export * from "./components/Tabs/index.ts";
