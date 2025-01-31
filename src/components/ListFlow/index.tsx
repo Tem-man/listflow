@@ -2,7 +2,6 @@ import { ReactNode, useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
 import { LoadingComponent, EmptyComponent, LoadingMoreComponent, InitialErrorComponent, ErrorComponent, NoMoreComponent } from "../DefaultNode/index.tsx";
 import sty from "./index.module.css";
-import useIntersectionObserver from "../../hook/useIntersectionObserver.ts";
 
 export interface PageParams {
   pageSize: number;
@@ -15,6 +14,7 @@ export interface ListFlowProps<T> {
   renderItem: (item: T) => ReactNode;
   params?: Record<string, any>;
   className?: string;
+  rootMargin?: string;
   loadingComponent?: ReactNode;
   emptyComponent?: ReactNode;
   loadingMoreComponent?: ReactNode;
@@ -28,6 +28,7 @@ export default function ListFlow<T>({
   renderItem,
   params,
   className,
+  rootMargin,
   loadingComponent = LoadingComponent,
   emptyComponent = EmptyComponent,
   loadingMoreComponent = LoadingMoreComponent,
@@ -42,8 +43,7 @@ export default function ListFlow<T>({
   const [loadMoreError, setLoadMoreError] = useState("");
   const [hasMore, setHasMore] = useState(true);
   const [page, setPage] = useState(1);
-  // const { ref, inView } = useInView();
-  const { ref, inView } = useIntersectionObserver();
+  const { ref, inView } = useInView({ rootMargin });
 
   const fetchData = async (isFirstFetch = false) => {
     try {

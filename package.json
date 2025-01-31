@@ -1,57 +1,61 @@
 {
-    "name": "listflow-react",
-    "private": false,
-    "version": "1.0.8",
-    "module": "./dist/index.es.js",
-    "types": "./dist/index.d.ts",
-    "exports": {
-        ".": {
-            "types": "./dist/index.d.ts",
-            "import": "./dist/index.es.js"
-        }
-    },
-    "files": [
-        "./dist"
-    ],
-    "publishConfig": {
-        "access": "public"
-    },
-    "scripts": {
-        "dev": "vite",
-        "build:start": "vite build && tsc --p tsconfig-build.json",
-        "build": "vite build && tsc --emitDeclarationOnly --outDir dist",
-        "preview": "vite preview"
-    },
-    "dependencies": {
-        "react-intersection-observer": "^9.14.1"
-    },
-    "peerDependencies": {
-        "autoprefixer": "^10.4.20",
-        "postcss": "^8.4.49",
-        "react": "^18.3.1",
-        "react-dom": "^18.3.1"
-    },
-    "devDependencies": {
-        "@types/node": "^20.16.0",
-        "@types/react": "^18.3.18",
-        "@types/react-dom": "^18.3.5",
-        "@vitejs/plugin-react-swc": "^3.5.0",
-        "autoprefixer": "^10.4.20",
-        "globals": "^15.14.0",
-        "postcss": "^8.4.49",
-        "react": "^18.3.1",
-        "react-dom": "^18.3.1",
-        "rollup-plugin-visualizer": "^5.14.0",
-        "tailwindcss": "^3.4.1",
-        "typescript": "~5.6.2",
-        "vite": "^6.0.5",
-        "vite-plugin-css-injected-by-js": "^3.5.2",
-        "vite-plugin-dts": "^4.5.0"
-    },
-    "type": "module",
-    "author": {
-        "name": "Lin Ji Man",
-        "email": "Temman_lin@qq.com"
-    },
-    "license": "MIT"
+  "name": "listflow-react",
+  "private": false,
+  "version": "1.0.9",
+  "module": "./dist/index.es.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.es.js"
+    }
+  },
+  "files": [
+    "./dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build:start": "vite build && tsc --p tsconfig-build.json",
+    "build": "vite build && tsc --emitDeclarationOnly --outDir dist",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react-intersection-observer": "^9.14.1"
+  },
+  "peerDependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.16.0",
+    "@types/react": "^18.3.18",
+    "@types/react-dom": "^18.3.5",
+    "@vitejs/plugin-react-swc": "^3.5.0",
+    "autoprefixer": "^10.4.20",
+    "globals": "^15.14.0",
+    "postcss": "^8.4.49",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "rollup-plugin-visualizer": "^5.14.0",
+    "tailwindcss": "^3.4.1",
+    "typescript": "~5.6.2",
+    "vite": "^6.0.5",
+    "vite-plugin-css-injected-by-js": "^3.5.2",
+    "vite-plugin-dts": "^4.5.0"
+  },
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tem-man/listflow.git"
+  },
+  "author": {
+    "name": "Lin Ji Man",
+    "email": "Temman_lin@qq.com"
+  },
+  "license": "MIT"
 }
