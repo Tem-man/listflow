@@ -6,7 +6,12 @@ import cssInjectedByJsPlugin from "vite-plugin-css-injected-by-js";
 
 export default defineConfig({
   plugins: [react(), dts()],
-
+  css: {
+    modules: {
+      localsConvention: "camelCase", // 将 CSS Modules 类名转换为驼峰命名
+      scopeBehaviour: "local", // 确保样式是局部的
+    },
+  },
   build: {
     copyPublicDir: false,
     lib: {
@@ -29,6 +34,6 @@ export default defineConfig({
     },
     sourcemap: false,
     emptyOutDir: true,
-    cssCodeSplit: false, // 启用 CSS 文件的单独打包
+    cssCodeSplit: true, // 启用 CSS 文件的单独打包
   },
 });
