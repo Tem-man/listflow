@@ -65,10 +65,6 @@ const TabsTitle = (props: TabsTitleProps) => {
     return () => window.removeEventListener("resize", () => calculateLineWidth(true));
   }, []);
 
-  if (!isStyleLoaded) {
-    return null;
-  }
-
   return (
     <div className={className}>
       <div className={`${styles.tabList}`} ref={wrapperRef}>
