@@ -1,35 +1,39 @@
 .tabList {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    align-items: center;
-    position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  opacity: 1;
+  /* 确保可见性 */
+  visibility: visible;
+  /* 确保可见性 */
 }
 
 .tabLine {
-    position: absolute;
-    bottom: 8px;
-    /* left: 0; */
-    height: 2px;
-    background-color: #1677ff;
-    border-radius: 2px;
+  position: absolute;
+  bottom: 8px;
+  /* left: 0; */
+  height: 2px;
+  background-color: #1677ff;
+  border-radius: 2px;
 }
 
 .tab {
-    flex: auto;
-    padding: 0 12px;
-    box-sizing: border-box;
+  flex: auto;
+  padding: 0 12px;
+  box-sizing: border-box;
 }
 
 .tabTitle {
-    margin: auto;
-    white-space: nowrap;
-    width: min-content;
-    position: relative;
-    padding: 8px 0 10px;
-    color: #2a2929;
+  margin: auto;
+  white-space: nowrap;
+  width: min-content;
+  position: relative;
+  padding: 8px 0 10px;
+  color: #2a2929;
 }
 
 .tabActive {
-    color: #1677ff;
+  color: #1677ff;
 }

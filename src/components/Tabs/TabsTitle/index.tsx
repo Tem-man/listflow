@@ -18,6 +18,7 @@ export interface TabsTitleProps {
 const TabsTitle = (props: TabsTitleProps) => {
   const { title, className, showTabLine = false, renderItem } = props;
   const wrapperRef = useRef<HTMLDivElement>(null);
+  const [isStyleLoaded, setIsStyleLoaded] = useState(false);
   const { navList, tab, id } = useTabContext();
   let type = "default";
   if (renderItem) {
@@ -49,6 +50,7 @@ const TabsTitle = (props: TabsTitleProps) => {
   );
 
   useEffect(() => {
+    setIsStyleLoaded(true);
     calculateLineWidth(true);
   }, []);
 
@@ -62,6 +64,10 @@ const TabsTitle = (props: TabsTitleProps) => {
     });
     return () => window.removeEventListener("resize", () => calculateLineWidth(true));
   }, []);
+
+  if (!isStyleLoaded) {
+    return null;
+  }
 
   return (
     <div className={className}>
