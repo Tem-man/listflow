@@ -31,7 +31,7 @@ pnpm add listflow-react
 
 ```tsx
 import { ListFlow } from "listflow-react";
-import "listflow-react/dist/index.css";
+import "listflow-react/index.css";
 interface User {
   id: number;
   name: string;
@@ -133,7 +133,7 @@ const Demo = () => {
 
 ```tsx
 import { ListFlow } from "listflow-react";
-import "listflow-react/dist/index.css";
+import "listflow-react/index.css";
 interface User {
   id: number;
   name: string;
