@@ -1,5 +1,5 @@
 // export { default as LjmList } from "./components/LjmList/index.js";
-// import "./styles/index.css";
+import "./styles/index.css";
 
 // export * from "./components/index.ts";
 

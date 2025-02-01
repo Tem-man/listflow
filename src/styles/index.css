@@ -1,6 +1,7 @@
 /* 导入所有组件的样式 */
 
 @import "../components/DefaultNode/index.module.css";
-@import "../components/LjmList/index.module.css";
+@import "../components/ListFlow/index.module.css";
+@import "../components/Tabs/TabsTitle/index.module.css";
 
 /* 其他全局样式 */
