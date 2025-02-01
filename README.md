@@ -30,14 +30,14 @@ pnpm add listflow-react
 ## Usage
 
 ```tsx
-import { ListFlow } from "listflow-reacts";
+import { ListFlow } from "listflow-react";
+import "listflow-react/dist/index.css";
 interface User {
   id: number;
   name: string;
   bio: string;
 }
 const Demo = () => {
-  import sty from "./index.module.css";
 
   return (
     <div className="w-[50%]">
@@ -132,8 +132,8 @@ const Demo = () => {
 ## Example
 
 ```tsx
-import { ListFlow } from "listflow-reacts";
-
+import { ListFlow } from "listflow-react";
+import "listflow-react/dist/index.css";
 interface User {
   id: number;
   name: string;
